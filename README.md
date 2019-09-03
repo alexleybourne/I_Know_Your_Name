@@ -1,4 +1,4 @@
-![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo.png)
+![I Know Your Name Logo Gif](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo_Gif.gif)
 
 
 I KNOW YOUR NAME - RUBY APPLICATION
