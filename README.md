@@ -2,6 +2,8 @@
 
 
 I KNOW YOUR NAME - RUBY APPLICATION
+============
+![Twitter Follow](https://img.shields.io/twitter/follow/AlexLeybourne?label=Follow%20Me&style=social)
 
 source code: 
 
