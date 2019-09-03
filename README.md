@@ -6,7 +6,7 @@ I KNOW YOUR NAME - RUBY APPLICATION
 ![Twitter Follow](https://img.shields.io/twitter/follow/alexleybourne?style=social) 
 ![GitHub followers](https://img.shields.io/github/followers/alexleybourne?label=Follow&style=social)
 
-source code: [I Know Your Name](https://github.com/alexleybourne/I_Know_Your_Name)
+source code: [https://github.com/alexleybourne/I_Know_Your_Name](https://github.com/alexleybourne/I_Know_Your_Name)
 
 ## Description
 **‘I Know Your Name’** Is a text based horror game inspired by a new genre of horror has become popular with the concept of a game becoming self aware.  The game has been coded with Ruby using multiple Gems, custom methods, modules and following the DRY (Don't Repeat Yourself) principle.
