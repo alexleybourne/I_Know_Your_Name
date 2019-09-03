@@ -6,7 +6,7 @@ I KNOW YOUR NAME - RUBY APPLICATION
 ![Twitter Follow](https://img.shields.io/twitter/follow/alexleybourne?style=social) 
 ![GitHub followers](https://img.shields.io/github/followers/alexleybourne?label=Follow&style=social)
 
-source code: 
+source code: [I Know Your Name](https://github.com/alexleybourne/I_Know_Your_Name)
 
 ## Description
 **‘I Know Your Name’** Is a text based horror game inspired by a new genre of horror has become popular with the concept of a game becoming self aware.  The game has been coded with Ruby using multiple Gems, custom methods, modules and following the DRY (Don't Repeat Yourself) principle.
@@ -14,7 +14,7 @@ source code:
 This Terminal game take the classic text adventure game formula and flips it on its head. With the computer becoming more and more evil as you progress. Your choices change the outcome of the game based on how you interact with the computer.
 
 ## Motivation
-I have recently been watching many horror movies and that naturally gave me the idea that I wanted ot create a horror based text game. I wanted to also stand out and make something unique to leave a lasting impression.
+I have recently been watching many horror movies and that naturally gave me the idea that I wanted to create a horror based text game. I wanted to also stand out and make something unique to leave a lasting impression.
 
 I also played with other ideas in my brainstorming process:
 - Recreating **Snake** the classic hit arcade game. However this would be a very large project to undertake in such a short time and would lack originality.
