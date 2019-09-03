@@ -99,7 +99,7 @@ I then got to work on the flowchart of the app to layout the story line and the 
 
 Flowchart of story pathways and functions:
 
-![enter image description here](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Flowchart.pdf)
+![Flow Chart of Game](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Flowchart_jpeg.jpeg)
 
 
 ## Record of Planning Progress
