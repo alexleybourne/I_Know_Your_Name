@@ -1,4 +1,5 @@
-﻿
+![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo.png)
+
 
 I KNOW YOUR NAME - RUBY APPLICATION
 
