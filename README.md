@@ -91,9 +91,9 @@ The current product is in the process of being finished.
 
 ## Design and Planning progress
 
-*I Know Your Name* was created in three days by Alex Leybourne as part of Ruby Assessment at [Coder Acadmey](https://coderacademy.edu.au/)
+*I Know Your Name* was created in three days by Alex Leybourne as part of Ruby Assessment at [Coder Academy](https://coderacademy.edu.au/)
 
-In the early stages of planning I brainstormed potential ideas and functionality I could incorporate within them. I then settled on the text based horror idea and began forminga basic strucutre of what to do, features, user stories etc. in [Trello](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app).
+In the early stages of planning I brainstormed potential ideas and functionality I could incorporate within them. I then settled on the text based horror idea and began forminga basic structure of what to do, features, user stories etc. in [Trello](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app).
 
 I then got to work on the flowchart of the app to layout the story line and the paths the user can take. How the computer will interact with them and the way it will all work. 
 
@@ -107,7 +107,7 @@ Flowchart of story pathways and functions:
 
 ## Project Timeline 
 
-The initial planning and pre visualization of the program was mostly done the first day after getting the project. 
+The initial planning and pre visualisation of the program was mostly done the first day after getting the project. 
 ## Testing
 
 
@@ -122,11 +122,11 @@ Copyright issues were not a concern as the idea is completely original and does 
 
 ## License
 
-**Copyright (c) 2019 Alex Leybourne** for [Coder Academy](https://coderacademy.edu.au).
+**Copyright © 2019 Alex Leybourne** for [Coder Academy](https://coderacademy.edu.au).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distributeand to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
