@@ -3,7 +3,7 @@
 
 I KNOW YOUR NAME - RUBY APPLICATION
 ============
-![Twitter Follow](https://twitter.com/intent/follow?screen_name=AlexLeybournelabel=Follow%20Me&style=social) 
+![Twitter Follow](https://img.shields.io/twitter/follow/alexleybourne?style=social) 
 ![GitHub followers](https://img.shields.io/github/followers/alexleybourne?label=Follow&style=social)
 
 source code: 
