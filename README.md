@@ -97,6 +97,10 @@ In the early stages of planning I brainstormed potential ideas and functionality
 
 I then got to work on the flowchart of the app to layout the story line and the paths the user can take. How the computer will interact with them and the way it will all work. 
 
+Flowchart of story pathways and functions:
+
+![enter image description here](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Flowchart.pdf)
+
 
 ## Record of Planning Progress
 
