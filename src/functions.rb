@@ -42,13 +42,19 @@ def waits(time)
     end
 end
 
-def loading(file_name)
-    bar = TTY::ProgressBar.new "downloading #{file_name} [:bar] :current_byte/:total_byte" do |conf|
-        conf.total = 100000000000
-      end
-      
-      30.times do
-        sleep(0.1)
-        bar.advance(Random.rand(990000000))
-      end
+# Creates a fake loading bar that allows you to write the task eg: download, upload & corrupt
+# It generate a random amount between 50gbs or 150gbs
+def loading(task, file_name)
+    bar = TTY::ProgressBar.new "#{task}ing #{file_name} files [:bar] :percent :current_byte/:total_byte" do |conf|
+        conf.total = (Random.rand(53687091200...161061273600))
+    end
+      # Generates random progression speeds of the bar to make it look slightly more realistic
+      # Progresses in random intervals between 0.5gbs and 2gbs
+      # Still has mad speeds despite Australian internet lol.
+    until bar.complete? == true
+        sleep(Random.rand(0.05...0.2))
+        bar.advance(Random.rand(536870912...2147483648))
+    end
+    # types out eg: (System Root) files (Download) Complete.
+    types "#{file_name} files #{task} Complete."
 end
