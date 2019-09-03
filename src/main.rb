@@ -19,4 +19,21 @@ class Main_Tests < Test::Unit::TestCase
     def test_types
         types "Hello."
     end
+
+    def test_deletes
+        print "Hello"
+        waits(2.0)
+        deletes "Hello"
+    end
+
+    # def test_waits
+    #     waits(4)
+    # end
+
+    def test_loading
+        loading("YOUR FILES")
+    end
+
+    
 end
+
