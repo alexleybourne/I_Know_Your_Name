@@ -337,6 +337,10 @@ def end_screen_options
 
         if @return_value == "no"
             @play = false # If user says no the program stops
+            puts `clear`
+            types "Goodbye friend."
+            waits(2)
+            puts `clear`
         else
             # Program restarts
         end
