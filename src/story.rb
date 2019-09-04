@@ -46,8 +46,8 @@ def first_questions
             "Do you question your reality?",
         ]
         question3 = [
-            "Does your hair smell nice?",
             "Do you like the taste of Blood?",
+            "Does your hair smell nice?",
             "Would you kill for someone?",
         ]
         case question_no
@@ -63,7 +63,7 @@ def first_questions
         question_no +=1
         times -=1
         case answer
-        when "yes", "Yes","no", "No"
+        when "yes", "Yes", "y", "Y", "no", "No", "n", "N"
         else    
           types "Please answer properly with Yes or No."
           puts
@@ -75,7 +75,7 @@ def first_questions
     waits(1)
     puts `clear`
     waits(1)
-    types "Thank you." 
+    types "Thank you for your answers." 
 end
 
 # This pulls a name from the list below and asks the user if this is their name
@@ -86,7 +86,7 @@ def random_name
         "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
     ]
     @fake_name = names[num]
-    types "According to my calculations you name is #{names[num]}"
+    types "According to my calculations your name is #{names[num]}."
 end
 
 
@@ -115,3 +115,6 @@ end
 def print_fake
     puts @fake_name
 end
+
+# The End!
+# Thanks for having look at my code

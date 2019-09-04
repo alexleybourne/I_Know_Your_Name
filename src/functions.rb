@@ -68,3 +68,5 @@ def loading(task, file_name)
     types "#{file_name} files #{task} Complete."
 end
 
+# The End!
+# Thanks for having look at my code
