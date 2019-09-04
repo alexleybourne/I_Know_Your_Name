@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    io-console (0.4.8)
     power_assert (1.1.5)
     strings-ansi (0.1.0)
     test-unit (3.3.3)
@@ -20,6 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize (~> 0.8.1)
+  io-console (~> 0.4.8)
   test-unit (~> 3.3)
   tty-cursor (~> 0.7.0)
   tty-progressbar (~> 0.17.0)

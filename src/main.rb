@@ -15,29 +15,17 @@ require_relative 'story'
  Made by Alex Leybourne @CoderAcademy 2019
 =end
 
-class Main_Tests < Test::Unit::TestCase
-    # def test_types
-    #     types "Hello."
-    # end
+types `clear`
 
-    # def test_deletes
-    #     print "Hello"
-    #     waits(2.0)
-    #     deletes "Hello"
-    # end
+logo
 
-    # def test_waits
-    #     waits(4)
-    # end
+STDIN.getch
+puts `clear`
 
-    # def test_loading
-    #     loading("Download","System Root")
-    # end
-    types `clear`
-    # end_screen
-    # answer = gets.chomp
 
-    start_questions
-end
+first_questions
+
+random_name
+
 
 

@@ -61,7 +61,10 @@ I Know Your Name makes use of numerous gems to enhance the user experience and a
 * [Colorize](https://github.com/fazibear/colorize) Enables the use of coloured outputs in the Terminal.
 
 * [TTY-Cursor](https://github.com/piotrmurach/tty-cursor) To enable the computer to easily navigate the console and delete lines.
+
 * [TTY-ProgressBar](https://github.com/piotrmurach/tty-progressbar) Which enables the ability to easily display and create progress bars. (The file transfers)
+
+* [IO-Console](https://github.com/ruby/io-console) This enables the start screen to accept any key as an input.
 
 ## Build Status
 The current product is in the process of being finished.

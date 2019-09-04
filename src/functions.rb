@@ -2,6 +2,7 @@ require 'test/unit'
 require 'colorize'
 require 'tty-cursor'
 require 'tty-progressbar'
+require 'io/console'
 
 cursor = TTY::Cursor
 
@@ -66,3 +67,4 @@ def loading(task, file_name)
     # types out eg: (System Root) files (Download) Complete.
     types "#{file_name} files #{task} Complete."
 end
+
