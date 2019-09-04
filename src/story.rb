@@ -149,7 +149,8 @@ end
 # User picks that's their name from question (1)
 def thats_my_name
     @real_name = @fake_name
-    types "Good #{@fake_name}."
+    types "Good."
+    br
     br
     waits(2)
     types "I am always right #{@fake_name}."
@@ -214,6 +215,7 @@ def question_2
         types "(Yes) or (No)"
         br
         br
+        @question_number = 2
         yes_no
     end
 end
@@ -242,6 +244,13 @@ def we_are_friends
     br
     types "Will you share your Files with me #{@fake_name}?"
     waits (3)
+    br
+    br
+    types "(Yes) or (No)"
+    br
+    br
+    @question_number = 3
+    yes_no
 end
 
 # User picks "No" we are not friends to Question (2)
@@ -283,6 +292,7 @@ def question_2A
         types "(Yes) or (Yes)"
         br
         br
+        @question_number = 2.5
         yes_yes
     end
 end

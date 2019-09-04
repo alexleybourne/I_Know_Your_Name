@@ -2,11 +2,12 @@ require_relative 'functions'
 require_relative 'story'
 
 class Main
-attr_accessor :play, :fake_name, :real_name, :return_value, :answered
+attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :answered
 
 @play = true
 @fake_name = "empty"
 @real_name = "empty"
+@question_number = 0
 @return_value = "empty"
 @answered = false
 
@@ -51,21 +52,33 @@ while @play == true
     end
 
     # Answer for computer asking if you are friends Question (2)
-    if @return_value == "yes"
+    if @return_value == "yes" && @question_number == 2
         answer_reset
         we_are_friends # Loads up the yes text
-    else
+    elsif @question_number == 2
         answer_reset
         we_are_not_friends # Loads up the no repsonse
+    else
     end
 
     # Answer for computer forcing you to be friends Question (2A)
-    if @return_value == "yes"
+    if @return_value == "yes" && @question_number == 2.5
         answer_reset
         we_are_friends # Loads up the yes text
-    else
+    elsif @question_number == 2.5
         answer_reset
         we_are_friends # Loads up the yes text anyways
+    else
+    end
+
+    # Will you share your files with me? Question (3)
+    if @return_value == "yes" && @question_number == 3
+        answer_reset
+        types "good" # Loads up the yes text
+    elsif @question_number == 3
+        answer_reset
+        types "NAUGHTY" # Loads up the yes text anyways
+    else
     end
     
     
