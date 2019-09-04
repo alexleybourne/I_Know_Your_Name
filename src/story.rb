@@ -323,6 +323,24 @@ fast_types <<-'EOF'
 EOF
 end
 
+def end_screen_1
+fast_types <<-'EOF'
+                    ╦  ╦╔═╔╗╔╔═╗╦ ╦
+                    ║  ╠╩╗║║║║ ║║║║
+                    ╩  ╩ ╩╝╚╝╚═╝╚╩╝
+                ╦ ╦╔═╗╦ ╦╦═╗  ╔╗╔╔═╗╔╦╗╔═╗
+                ╚╦╝║ ║║ ║╠╦╝  ║║║╠═╣║║║║╣ 
+                 ╩ ╚═╝╚═╝╩╚═  ╝╚╝╩ ╩╩ ╩╚═╝
+    
+                YOU REACHED 1 OF 3 ENDINGS
+                  HANKYOU FOR YOUR FILES
+    
+    
+    
+    
+    EOF
+end
+
 # End screen code
 # Dipslays end screen text with options Yes and No to restart
 # Yes restarts the main loop, No ends the program and a incorrect input loops
@@ -331,7 +349,11 @@ def end_screen_options
     @answered = false
     while @answered != true
         puts `clear`
-
+        
+        end_screen_1
+        waits(3)
+        waits(3)
+        puts `clear`
         end_screen # Displays End Screen Graphic
         yes_no     # Uses the Yes / No function
 
