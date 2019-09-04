@@ -297,6 +297,17 @@ def question_2A
     end
 end
 
+def yes_share_files
+    puts `clear` 
+    types "Thank you #{@fake_name}."
+    br
+    types "You are my best friend."
+    br
+    waits (2)
+    get_directory
+    br
+    loading("upload", "#{@download_directory}")
+end
 
 
 
@@ -333,7 +344,7 @@ fast_types <<-'EOF'
                  ╩ ╚═╝╚═╝╩╚═  ╝╚╝╩ ╩╩ ╩╚═╝
     
                 YOU REACHED 1 OF 3 ENDINGS
-                  HANKYOU FOR YOUR FILES
+                  THANKYOU FOR YOUR FILES
     
     
     
@@ -351,8 +362,7 @@ def end_screen_options
         puts `clear`
         
         end_screen_1
-        waits(3)
-        waits(3)
+        waits(4)
         puts `clear`
         end_screen # Displays End Screen Graphic
         yes_no     # Uses the Yes / No function
@@ -370,9 +380,6 @@ def end_screen_options
 end
 
 
-def print_fake
-    puts @fake_name
-end
 
 # The End!
 # Thanks for having a look at my code

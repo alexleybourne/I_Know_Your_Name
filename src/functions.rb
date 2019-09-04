@@ -110,6 +110,18 @@ def waits(time)
     end
 end
 
+def get_directory
+    directory = Dir.pwd.to_s
+    directory = directory.split('/')
+    length = directory.length
+    length.to_i
+    length = length - 3
+    length.times {directory.pop}
+    directory = directory.join("/")
+    directory = directory + "/"
+    @download_directory = directory
+end
+
 def calculations
     bar = TTY::ProgressBar.new("Calculating [:bar] :percent", total: 30)
     30.times do

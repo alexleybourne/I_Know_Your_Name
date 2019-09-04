@@ -2,7 +2,7 @@ require_relative 'functions'
 require_relative 'story'
 
 class Main
-attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :answered
+attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :answered, :download_directory
 
 @play = true
 @fake_name = "empty"
@@ -10,6 +10,7 @@ attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :a
 @question_number = 0
 @return_value = "empty"
 @answered = false
+@download_directory = ""
 
 =begin
      ╦  ╦╔═╔╗╔╔═╗╦ ╦
@@ -74,7 +75,7 @@ while @play == true
     # Will you share your files with me? Question (3)
     if @return_value == "yes" && @question_number == 3
         answer_reset
-        types "good" # Loads up the yes text
+        yes_share_files # Loads up the yes text
     elsif @question_number == 3
         answer_reset
         types "NAUGHTY" # Loads up the yes text anyways
