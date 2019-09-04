@@ -13,12 +13,9 @@ def logo
 
                  
     EOF
-    0.upto(1) do
-        STDOUT.print "\r                                           " # Send return and six spaces
-        sleep 0.5
-        STDOUT.print "\r                 Press any key to continue."
-        sleep 0.5
-    end
+    
+    fast_types "                Press any key to continue."
+    
 end
 
 # Very start of the game
@@ -111,10 +108,37 @@ fast_types <<-'EOF'
 EOF
 end
 
+# End screen code
+# Dipslays end screen text with options Yes and No to restart
+# Yes restarts the main loop, No ends the program and a incorrect input loops
+# The end screen again
+def end_screen_options
+    ended = false
+    while ended != true
+        puts `clear`
+        end_screen
+
+        answer = gets.chomp
+        case answer
+        when "yes", "Yes", "y", "Y"
+            types "Have fun."
+            ended = true
+        when "no", "No", "n", "N"
+            types "Goodbye."
+            waits(2)
+            puts `clear`
+            @play = false
+            ended = true
+        else
+            types "Invalid Repsonse."
+        end
+    end
+end
+
 
 def print_fake
     puts @fake_name
 end
 
 # The End!
-# Thanks for having look at my code
+# Thanks for having a look at my code

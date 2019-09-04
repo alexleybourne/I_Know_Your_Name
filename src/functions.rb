@@ -69,4 +69,4 @@ def loading(task, file_name)
 end
 
 # The End!
-# Thanks for having look at my code
+# Thanks for having a look at my code
