@@ -15,7 +15,7 @@ def types(word)
     end
     puts  
 end
-
+# Faster Version
 def fast_types(word)
     word.each_char do |char|
         print char
@@ -23,6 +23,38 @@ def fast_types(word)
     end
     puts  
 end
+
+def answer_reset
+    @answered = false
+    @return_value = "empty"
+end
+
+# Yes or no method reduces code and follows DRY
+# The code takes in a Yes or No repsonse and outputs the result for use
+# If the player types in a invalid response it loops until they give a valid answer
+def yes_no 
+    answer = gets.chomp
+    case answer
+    when "yes", "Yes", "y", "Y"
+        waits(2)
+        puts `clear`
+        @return_value = "yes"
+        @answered = true
+
+    when "no", "No", "n", "N"
+        waits(2)
+        puts `clear`
+        @return_value = "no"
+        @answered = true
+    else
+        types "Invalid Repsonse."
+        waits(1)
+        types "Let's try that again."
+        waits(2)
+        puts `clear`
+    end
+end
+
 
 # Goes to the word(s) and deletes it right to left to look like
 # The computer is pressing delete / backspace

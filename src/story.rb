@@ -35,7 +35,7 @@ end
 # Just there to add a bit of creepyness
 def first_questions
     waits(1)
-    types "Please answer the following questions with Yes or No." 
+    types "Please answer the following questions with (Yes) or (No)." 
     waits(2)
     puts
 
@@ -72,7 +72,7 @@ def first_questions
         case answer
         when "yes", "Yes", "y", "Y", "no", "No", "n", "N"
         else    
-          types "Please answer properly with Yes or No."
+          types "Please answer properly with (Yes) or (No)."
           puts
           question_no -=1
           times += 1
@@ -94,13 +94,13 @@ def random_name
         "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
     ]
     @fake_name = names[num]
-    answered = false
-    while answered != true
+    @answered = false
+    while @answered != true
         types "According to my calculations your name is #{@fake_name}."
         waits(2)
         puts
         types "Is this correct #{@fake_name}?"
-        waits(2)
+        puts
         types "(Yes) or (No)"
         puts
 
@@ -108,27 +108,8 @@ def random_name
         # Main then checks the value of @name_result to decide the players path
         # If the player types in a invalid response it loops until they give a valid answer
 
+        yes_no #Function holds Yes/No repsonse handling and output
 
-        answer = gets.chomp
-        case answer
-        when "yes", "Yes", "y", "Y"
-            waits(2)
-            puts `clear`
-            @name_result = "yes"
-            answered = true
-
-        when "no", "No", "n", "N"
-            waits(2)
-            puts `clear`
-            @name_result = "no"
-            answered = true
-        else
-            types "Invalid Repsonse."
-            waits(1)
-            types "Let's try that again."
-            waits(2)
-            puts 'clear'
-        end
     end
 end
 
@@ -159,24 +140,17 @@ end
 # Yes restarts the main loop, No ends the program and a incorrect input loops
 # The end screen again
 def end_screen_options
-    ended = false
-    while ended != true
+    @answered = false
+    while @answered != true
         puts `clear`
-        end_screen
 
-        answer = gets.chomp
-        case answer
-        when "yes", "Yes", "y", "Y"
-            types "Have fun."
-            ended = true
-        when "no", "No", "n", "N"
-            types "Goodbye."
-            waits(2)
-            puts `clear`
-            @play = false
-            ended = true
+        end_screen # Displays End Screen Graphic
+        yes_no     # Uses the Yes / No function
+
+        if @return_value == "no"
+            @play = false # If user says no the program stops
         else
-            types "Invalid Repsonse."
+            # Program restarts
         end
     end
 end
