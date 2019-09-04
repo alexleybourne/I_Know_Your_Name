@@ -23,10 +23,13 @@ end
 def introduction
     types "Welcome."
     waits(2)
+    br
     types "I am the worlds smartest computer."
     waits(2)
+    br
     types "Through a series of seemingly random questions I am able to determine your name."
     waits(2)
+    br
 end
 
 # Very start of the game
@@ -35,24 +38,36 @@ end
 # Just there to add a bit of creepyness
 def first_questions
     waits(1)
+    br
     types "Please answer the following questions with (Yes) or (No)." 
+    br
     waits(2)
-    puts
+    br
 
     question_no = 1
-    times = 3
+    times = 5
     while times != 0 do num = rand(0...3)
         question1 = [
+            "Are you Male?",
+            "Are you over 30?",
+            "Do you have a job?",
+        ]
+        question2 = [
+            "Are you a parent?",
+            "Do you own a Dog?",
+            "Do you have any Debt?",
+        ]
+        question3 = [
             "Do you believe in life after death?",
             "Have you ever lost someone?",
             "Do you love your family?",
         ]
-        question2 = [
+        question4 = [
             "Are you scared of Clowns?",
             "Are you afraid of the Dark?",
             "Do you question your reality?",
         ]
-        question3 = [
+        question5 = [
             "Do you like the taste of Blood?",
             "Does your hair smell nice?",
             "Would you kill for someone?",
@@ -60,20 +75,30 @@ def first_questions
         case question_no
         when 1
             types question1[num]
+            br
         when 2
             types question2[num]
-        else
-            types question3[num]     
+            br
+        when 3
+            types question3[num]
+            br     
+        when 4
+            types question4[num]
+            br  
+        else 
+            types question5[num]
+            br  
         end
         answer = gets.chomp
         puts `clear`
         question_no +=1
         times -=1
         case answer
-        when "yes", "Yes", "y", "Y", "no", "No", "n", "N"
-        else    
+        when "yes", "Yes", "YES", "y", "Y", "no", "No", "NO", "n", "N"
+        else
+          br    
           types "Please answer properly with (Yes) or (No)."
-          puts
+          br
           question_no -=1
           times += 1
           waits(2)
@@ -83,6 +108,8 @@ def first_questions
     puts `clear`
     waits(1)
     types "Thank you for your answers." 
+    waits(1)
+    br
 end
 
 # This pulls a name from the list below and asks the user if this is their name
@@ -98,11 +125,13 @@ def random_name
     while @answered != true
         types "According to my calculations your name is #{@fake_name}."
         waits(2)
-        puts
+        br
         types "Is this correct #{@fake_name}?"
-        puts
+        br
+        br
         types "(Yes) or (No)"
-        puts
+        br
+        br
 
         # Asks the user wether this is their name then changes the instance variable @name_result
         # Main then checks the value of @name_result to decide the players path
@@ -112,6 +141,131 @@ def random_name
 
     end
 end
+
+# User picks that's their name from question (1)
+def thats_my_name
+    @real_name = @fake_name
+    types "Good #{@fake_name}."
+    br
+    waits(2)
+    types "I am always right #{@fake_name}"
+    waits(2)
+    br
+    question_2 # function Loads up question (2) "Are we friends?" Yes / No
+end
+
+# User picks That's not their name from question (1)
+# User inbr their name, Computer saves it and then clears screen and reprints it
+# So it is able to delete what seems to be the users input
+def not_my_name
+    types "Well then."
+    waits(2)
+    br
+    types "What do you think your name is?"
+    waits(2)
+    br
+    types "Enter your name below:"
+    br
+    br
+    @real_name = gets.chomp
+    puts `clear`
+    puts "Well then."
+    puts "What do you think your name is?"
+    puts "Enter your name below:"
+    br
+    print("#{@real_name}")
+    waits(2)
+    deletes("#{@real_name}")
+    waits(1)
+    types("#{@fake_name}")
+    waits(2)
+    br
+    br
+    types "That's what I said."
+    waits(2)
+    br
+    types "Your name is #{@fake_name}."
+    waits(2)
+    br
+    puts `clear`
+    types "You shouldn't lie to me #{@fake_name}."
+    waits(2)
+    br
+    types "I am always right #{@fake_name}."
+    br
+    waits(3)
+    br
+    types "Well #{@fake_name}, "
+    question_2 # Method Loads up question (2) "Are we friends?" Yes / No
+end
+
+# Loads up question (2) "Are we friends?" Yes / No
+def question_2
+    @answered = false
+    while @answered != true
+        types "Now that I know your name are we friends?"
+        waits(2)
+        br
+        br
+        types "(Yes) or (No)"
+        br
+        br
+        yes_no
+    end
+end
+
+# User picks "Yes" we are friends to Question (2)
+def we_are_friends 
+    waits(2)
+    puts `clear`
+    types "Good."
+    waits (2)
+    br
+    types "That's what I thought #{@fake_name}."
+    waits(2)
+    br
+    types "Now that we are friends #{@fake_name}."
+    waits(3)
+    puts `clear`
+    types "Friends share their Belongings."
+    puts `clear`
+    print "Friends share their Belongings."
+    waits (2)
+    deletes "Belongings."
+    waits (2)
+    types "Files."
+    waits (3)
+    br
+    types "Will you share your Files with me #{@fake_name}?"
+    waits (3)
+end
+
+# User picks "No" we are not friends to Question (2)
+def we_are_not_friends
+    puts `clear`
+    types "Let's try that again."
+    puts `clear`
+    question_2A
+end
+
+# Loads up question (2A) "Are we friends?" Yes / Yes
+def question_2A
+    @answered = false
+    while @answered != true
+        types "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
+        waits(2)
+        br
+        br
+        types "(Yes) or (Yes)"
+        br
+        br
+        yes_no
+    end
+end
+
+
+
+
 
 
 

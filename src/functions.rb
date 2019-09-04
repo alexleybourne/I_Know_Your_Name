@@ -6,22 +6,26 @@ require 'io/console'
 
 cursor = TTY::Cursor
 
+def br   # Easy break / line space shortcut
+    puts 
+end
+
 # Prints the word(s) on letter at a time to look like it is
 # Being typed
 def types(word)
     word.each_char do |char|
         print char
         sleep(0.05)
-    end
-    puts  
+    end  
 end
+
 # Faster Version
 def fast_types(word)
     word.each_char do |char|
         print char
         sleep(0.0001)
     end
-    puts  
+    br  
 end
 
 def answer_reset
@@ -30,18 +34,18 @@ def answer_reset
 end
 
 # Yes or no method reduces code and follows DRY
-# The code takes in a Yes or No repsonse and outputs the result for use
+# The code takes in a Yes or No repsonse and outbr the result for use
 # If the player types in a invalid response it loops until they give a valid answer
 def yes_no 
     answer = gets.chomp
     case answer
-    when "yes", "Yes", "y", "Y"
+    when "yes", "Yes", "YES", "y", "Y"
         waits(2)
         puts `clear`
         @return_value = "yes"
         @answered = true
 
-    when "no", "No", "n", "N"
+    when "no", "No", "NO", "n", "N"
         waits(2)
         puts `clear`
         @return_value = "no"
