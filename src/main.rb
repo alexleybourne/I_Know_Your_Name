@@ -1,5 +1,5 @@
-require 'test/unit'
 require_relative 'functions'
+require_relative 'story'
 
 =begin
      ╦  ╦╔═╔╗╔╔═╗╦ ╦
@@ -30,11 +30,14 @@ class Main_Tests < Test::Unit::TestCase
     #     waits(4)
     # end
 
-    def test_loading
-        loading("Download","System Root")
-    end
+    # def test_loading
+    #     loading("Download","System Root")
+    # end
+    types `clear`
+    # end_screen
+    # answer = gets.chomp
 
-    
+    start_questions
 end
 
 

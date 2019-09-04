@@ -10,7 +10,15 @@ cursor = TTY::Cursor
 def types(word)
     word.each_char do |char|
         print char
-        sleep(0.04)
+        sleep(0.05)
+    end
+    puts  
+end
+
+def fast_types(word)
+    word.each_char do |char|
+        print char
+        sleep(0.0001)
     end
     puts  
 end
