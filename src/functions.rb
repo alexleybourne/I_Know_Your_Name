@@ -51,14 +51,37 @@ def yes_no
         @return_value = "no"
         @answered = true
     else
+        puts `clear`
         types "Invalid Repsonse."
         waits(1)
+        br
+        br
         types "Let's try that again."
         waits(2)
         puts `clear`
     end
 end
 
+# For when the computer gets a bit pushy
+def yes_yes 
+    answer = gets.chomp
+    case answer
+    when "yes", "Yes", "YES", "y", "Y"
+        waits(2)
+        puts `clear`
+        @return_value = "yes"
+        @answered = true
+    else
+        puts `clear`
+        types "Invalid Repsonse."
+        waits(1)
+        br
+        br
+        types "Let's try that again."
+        waits(2)
+        puts `clear`
+    end
+end
 
 # Goes to the word(s) and deletes it right to left to look like
 # The computer is pressing delete / backspace
@@ -87,6 +110,16 @@ def waits(time)
     end
 end
 
+def calculations
+    bar = TTY::ProgressBar.new("Calculating [:bar] :percent", total: 30)
+    30.times do
+    sleep(0.1)
+    bar.advance(1)
+    end
+    br
+    types"Calculation Complete!"
+end
+
 # Creates a fake loading bar that allows you to write the task eg: download, upload & corrupt
 # It generate a random amount between 50gbs or 150gbs
 def loading(task, file_name)
@@ -101,6 +134,8 @@ def loading(task, file_name)
         bar.advance(Random.rand(536870912...2147483648))
     end
     # types out eg: (System Root) files (Download) Complete.
+    br
+    br
     types "#{file_name} files #{task} Complete."
 end
 

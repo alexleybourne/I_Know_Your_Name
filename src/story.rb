@@ -123,6 +123,10 @@ def random_name
     @fake_name = names[num]
     @answered = false
     while @answered != true
+        br
+        calculations
+        br
+        br
         types "According to my calculations your name is #{@fake_name}."
         waits(2)
         br
@@ -148,7 +152,7 @@ def thats_my_name
     types "Good #{@fake_name}."
     br
     waits(2)
-    types "I am always right #{@fake_name}"
+    types "I am always right #{@fake_name}."
     waits(2)
     br
     question_2 # function Loads up question (2) "Are we friends?" Yes / No
@@ -244,22 +248,42 @@ end
 def we_are_not_friends
     puts `clear`
     types "Let's try that again."
+    waits(2)
     puts `clear`
     question_2A
 end
 
 # Loads up question (2A) "Are we friends?" Yes / Yes
+# Shows real name in RED in a glitch style effect
 def question_2A
     @answered = false
     while @answered != true
-        types "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
+        types "Now that I know your name #{@fake_name} are we friends?"
+        sleep(0.05)
+        puts `clear`
+        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
+        sleep(0.1)
+        puts `clear`
+        print "Now that I know your name #{@fake_name} are we friends?"
+        sleep(0.1)
+        puts `clear`
+        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
+        sleep(0.05)
+        puts `clear`
+        print "Now that I know your name #{@fake_name} are we friends?"
+        sleep(0.05)
+        puts `clear`
+        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
+        sleep(0.1)
+        puts `clear`
+        print "Now that I know your name #{@fake_name} are we friends?"
         waits(2)
         br
         br
         types "(Yes) or (Yes)"
         br
         br
-        yes_no
+        yes_yes
     end
 end
 

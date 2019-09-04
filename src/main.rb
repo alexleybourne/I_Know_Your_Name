@@ -59,13 +59,13 @@ while @play == true
         we_are_not_friends # Loads up the no repsonse
     end
 
-    # Answer for computer making you friends Question (2A)
+    # Answer for computer forcing you to be friends Question (2A)
     if @return_value == "yes"
         answer_reset
         we_are_friends # Loads up the yes text
     else
         answer_reset
-        we_are_friends # Loads up the no repsonse
+        we_are_friends # Loads up the yes text anyways
     end
     
     
