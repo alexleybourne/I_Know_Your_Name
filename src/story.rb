@@ -1,5 +1,6 @@
 require_relative 'functions'
 
+
 # End Screen Graphics
 def logo
     fast_types <<-'EOF'
@@ -18,15 +19,24 @@ def logo
     
 end
 
+# Basic introduction text
+def introduction
+    types "Welcome."
+    waits(2)
+    types "I am the worlds smartest computer."
+    waits(2)
+    types "Through a series of seemingly random questions I am able to determine your name."
+    waits(2)
+end
+
 # Very start of the game
 # Picks 3 questions from a random set of questions and checks the user answers properly
 # However these answers do not affect the users progression
 # Just there to add a bit of creepyness
 def first_questions
-    types "Hello." 
     waits(1)
     types "Please answer the following questions with Yes or No." 
-    waits(1)
+    waits(2)
     puts
 
     question_no = 1
@@ -77,13 +87,49 @@ end
 
 # This pulls a name from the list below and asks the user if this is their name
 # The very rare case it is their name. It will take them on their own pathway
+
 def random_name
     num = rand(0...6)
     names = [
         "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
     ]
     @fake_name = names[num]
-    types "According to my calculations your name is #{names[num]}."
+    answered = false
+    while answered != true
+        types "According to my calculations your name is #{@fake_name}."
+        waits(2)
+        puts
+        types "Is this correct #{@fake_name}?"
+        waits(2)
+        types "(Yes) or (No)"
+        puts
+
+        # Asks the user wether this is their name then changes the instance variable @name_result
+        # Main then checks the value of @name_result to decide the players path
+        # If the player types in a invalid response it loops until they give a valid answer
+
+
+        answer = gets.chomp
+        case answer
+        when "yes", "Yes", "y", "Y"
+            waits(2)
+            puts `clear`
+            @name_result = "yes"
+            answered = true
+
+        when "no", "No", "n", "N"
+            waits(2)
+            puts `clear`
+            @name_result = "no"
+            answered = true
+        else
+            types "Invalid Repsonse."
+            waits(1)
+            types "Let's try that again."
+            waits(2)
+            puts 'clear'
+        end
+    end
 end
 
 

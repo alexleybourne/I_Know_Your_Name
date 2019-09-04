@@ -2,8 +2,9 @@ require_relative 'functions'
 require_relative 'story'
 
 class Main
-attr_accessor :play
+attr_accessor :play, :name_result
 @play = true
+@name_result = "empty"
 
 =begin
      ╦  ╦╔═╔╗╔╔═╗╦ ╦
@@ -28,17 +29,25 @@ while @play != false
     STDIN.getch  #Waits for user input (Any Key)
     puts `clear` # Clears screen after
 
+    introduction
+
     first_questions #Loads The first set of three questions
 
     random_name #Diplays the random chosen name as its guess
     waits(3)
 
+    if @name_result == "yes"
+        types "Good."
+    else
+        types "Well then."
+        waits(2)
+        types "What do you think your name is?"
+    end
 
-    # End screen code
-    # Dipslays end screen text with options Yes and No to restart
-    # Yes restarts the main loop, No ends the program and a incorrect input loops
-    # The end screen again
-    end_screen_options
+
+
+    
+    end_screen_options # Dipslays end screen text with options Yes and No to restart
 end
 end
 
