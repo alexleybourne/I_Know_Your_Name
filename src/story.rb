@@ -116,11 +116,11 @@ end
 # The very rare case it is their name. It will take them on their own pathway
 
 def random_name
-    num = rand(0...6)
-    names = [
-        "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
-    ]
-    @fake_name = names[num]
+    # num = rand(0...6)
+    # names = [
+    #     "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
+    # ]
+    @fake_name = Faker::Name.first_name
     @answered = false
     while @answered != true
         br

@@ -3,6 +3,7 @@ require 'colorize'
 require 'tty-cursor'
 require 'tty-progressbar'
 require 'io/console'
+require 'faker'
 
 cursor = TTY::Cursor
 
