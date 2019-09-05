@@ -33,4 +33,20 @@
 -  4/09/19 `7:30` - **Yes / No Questions are now in a function to improve DRY principle**
 -   4/09/19 `7:50` - **Updating Flowchart  and Development log (More Detailed)**
 
+> Thursday 5th of September 2019
 
+-   4/09/19 `10:00` - **Added extra Questions to begining**
+-   4/09/19 `10:30` - **Created Red Text Glitch Effect and added Loading Bar to Start**
+-   4/09/19 `11:00` - **Added Number identifiers to Questions**
+- 4/09/19 `11:20` - **Updated Flowchart**
+- 4/09/19 `11:40` - **Updated Goodbye Message**
+- 4/09/19 `12:10` - **Updated End Screen**
+- 4/09/19 `1:00` - **Added Faker Gem for Random name generation**
+- 4/09/19 `1:30` - **Completed Ending / Pathway 1**
+- 4/09/19 `2:20` - **Added Glitch function and fixed minor bugs**
+- 4/09/19 `2:40` - **Added Questions 4, 5 and Started their pathways**
+- 4/09/19 `3:30` - **Finished Pathway 2 / 3**
+- 4/09/19 `4:00` - **Finished all story Pathways**
+- 4/09/19 `4:20` - **User Testing**
+- 4/09/19 `4:40` - **Teacher feedback on code and documentation so far**
+- 4/09/19 `9:30` - **Updated Development log**
