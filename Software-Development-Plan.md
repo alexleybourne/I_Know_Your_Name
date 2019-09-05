@@ -44,6 +44,8 @@ The games input through its entirety evolves aorund this system. If the user ent
 
 I Know Your Name Development Flowchart:
 
+- [Flow Chart](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Flowchart.pdf)
+
 ![I Know Your Name Flowchart](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Flowchart-jpg.jpg)
 
 ----

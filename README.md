@@ -10,7 +10,7 @@ Files:
 - [Help](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/help.md)
 - [Development log](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/development-log.md)
 - [Software Development Plan](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/software-development-plan.md)
-- [Flow Chart](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Flowchart-jpg.jpg)
+- [Flow Chart](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Flowchart.pdf)
 
 ## Description
 **‘I Know Your Name’** Is a text based horror game inspired by a new genre of horror has become popular with the concept of a game becoming self aware.  The game has been coded with Ruby using multiple Gems, custom methods, modules and following the DRY (Don't Repeat Yourself) principle.
