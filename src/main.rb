@@ -31,6 +31,10 @@ while @play == true
 
     puts `clear` #Clears the screen
 
+    @fake_name = "Jim"
+    @real_name = "Alex"
+    no_share_files
+
     logo #Displays logo from story
 
     STDIN.getch  #Waits for user input (Any Key)
@@ -75,10 +79,10 @@ while @play == true
     # Will you share your files with me? Question (3)
     if @return_value == "yes" && @question_number == 3
         answer_reset
-        yes_share_files # Loads up the yes text
+        yes_share_files # Loads up the yes progression
     elsif @question_number == 3
         answer_reset
-        types "NAUGHTY" # Loads up the yes text anyways
+        no_share_files # Loads up the no progression
     else
     end
     

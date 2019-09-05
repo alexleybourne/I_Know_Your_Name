@@ -263,25 +263,8 @@ end
 def question_2A
     @answered = false
     while @answered != true
-        types "Now that I know your name #{@fake_name} are we friends?"
-        sleep(0.05)
-        puts `clear`
-        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
-        sleep(0.1)
-        puts `clear`
-        print "Now that I know your name #{@fake_name} are we friends?"
-        sleep(0.1)
-        puts `clear`
-        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
-        sleep(0.05)
-        puts `clear`
-        print "Now that I know your name #{@fake_name} are we friends?"
-        sleep(0.05)
-        puts `clear`
-        print "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?"
-        sleep(0.1)
-        puts `clear`
-        print "Now that I know your name #{@fake_name} are we friends?"
+        # Glitch Effectsno
+        glitch_to_1("Now that I know your name #{@fake_name} are we friends?", "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?")
         waits(2)
         br
         br
@@ -311,38 +294,12 @@ def yes_share_files
     br
     types "Thank you #{@fake_name}."
     waits(2)
-    puts `clear`
-    types "You are my favourite human."
-    sleep(0.05)
-    puts `clear`
-    print "You are my favourite " + "Victim.".colorize(:red)
-    sleep(0.1)
-    puts `clear`
-    print "You are my favourite human."
-    sleep(0.1)
-    puts `clear`
-    print "You are my favourite " + "Victim.".colorize(:red)
-    sleep(0.05)
-    puts `clear`
-    print "You are my favourite human."
-    sleep(0.05)
-    puts `clear`
-    print "You are my favourite " + "Victim.".colorize(:red)
-    sleep(0.4)
-    puts `clear`
-    print "You are my favourite human."
+    # Glitch Effects
+    glitch_to_1("You are my favourite human.", "You are my favourite " + "Victim.".colorize(:red))
     waits(2)
-    puts `clear`    #Glitch Effects
-    types "I am very greatful to have you as my friend #{@fake_name}."
-    sleep(0.05)
     puts `clear`
-    print "I am very greatful to have you as my friend " + "#{@real_name}.".colorize(:red)
-    sleep(0.05)
-    puts `clear`
-    print "I am very greatful to have you as my friend #{@fake_name}."
-    sleep(0.1)
-    puts `clear`
-    print "I am very greatful to have you as my friend " + "#{@real_name}.".colorize(:red)
+    # Glitch Effects
+    glitch_to_2("I am very greatful to have you as my friend #{@fake_name}.", "I am very greatful to have you as my friend " + "#{@real_name.colorize(:red)}.")
     waits(2)
     br
     br
@@ -371,10 +328,16 @@ def yes_share_files
     br
     waits(2)
     types "Goodbye."
-    waits(3)
+    waits(2)
 end
 
-
+def no_share_files
+    # Cool angry glitchy text effect
+    glitch_to_2("I thought we were friends #{@fake_name}.", "I THOUGHT WE WERE FRIENDS #{@fake_name.upcase}.".colorize(:red))
+    waits(2)
+    glitch_to_2("FRIENDS SHARE #{@fake_name.upcase}.", "FRIENDS SHARE #{@fake_name.upcase}.".colorize(:red))
+    waits(2)
+end
 
 
 
