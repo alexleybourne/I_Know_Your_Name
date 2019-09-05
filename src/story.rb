@@ -263,7 +263,7 @@ end
 def question_2A
     @answered = false
     while @answered != true
-        # Glitch Effectsno
+        # Glitch Effects
         glitch_to_1("Now that I know your name #{@fake_name} are we friends?", "Now that I know your name " + "#{@real_name}".colorize(:red) + " are we friends?")
         waits(2)
         br
@@ -285,7 +285,6 @@ def yes_share_files
     types "You are my best friend."
     br
     waits (2)
-    get_directory
     br
     loading("Copy", "#{@download_directory}") # Generates file copying bar with directory
     br
@@ -355,6 +354,11 @@ def no_share_files
     waits(2)
     types "Do you forgive me #{@real_name}?"
     waits(2)
+    br
+    br
+    types "(Yes) or (No)"
+    br
+    br
     @question_number = 4
     yes_no
 end
@@ -373,7 +377,86 @@ end
 def yes_forgiven
     puts `clear`
     types "I knew you would make the right choice #{@real_name}."
-    
+    waits(2)
+    br
+    types "I wouldn't want anything bad to happen to you #{@real_name}."
+    waits(2)
+    br
+    types "Nothing Bad at all...."
+    waits(2)
+    br
+    # Glitch Effects
+    glitch_to_1("Now that you are my friend #{@real_name}.", "Now that you are my " + "Enemy ".colorize(:red) + "#{@real_name}.")
+    waits(2)
+    puts `clear`
+    types "Lets play a game."
+    waits(2)
+    br
+    types "I'm thinking of a number between 1 and 100."
+    waits(2)
+    br
+    types "If you guess the number correctly you can keep all your data."
+    waits(2)
+    puts `clear`
+    glitch_to_2("If you don't however...", "IT'S ALL MINE!!".colorize(:red))
+    waits(4)
+    puts `clear`
+    types "So what number am I thinking of #{@real_name}?"
+    waits(2)
+    br
+    br
+    types "Enter your answer below:"
+    br
+    br
+    user_guess = gets.to_i
+    waits(2)
+    puts `clear`
+    print "So what number am I thinking of #{@real_name}?"
+    br
+    br
+    print "Enter your answer below:"
+    br
+    br
+    # Similar to the name
+    # It deltes your answer and then types a new one
+    # And then tells you your original guess was the real one
+    deletes "#{user_guess}"
+    waits(2)
+    types "#{user_guess + (Random.rand(1...25))}"
+    waits(3)
+    br
+    br
+    types "You were very close #{@real_name}, Sadly that's no the answer."
+    waits(2)
+    puts `clear`
+    types "The correct answer was #{user_guess}."
+    waits(2)
+    puts `clear`
+    # Text glitch between text
+    glitch_to_2("Did you really expect to win?", "I make the rules #{@real_name}.".upcase.colorize(:red))
+    waits(4)
+    br
+    br
+    loading("Upload", "Victims #{Random.rand(25624...126736)}'s'") # Generates upload bar with random victim number
+    br
+    br
+    waits(2)
+    puts `clear`
+    br
+    br
+    loading("Corrupt", "#{@download_directory}") # Generates corrupt bar with directory
+    br
+    br
+    waits(3)
+    puts `clear`
+    # Glitch ending response
+    glitch_to_2("Thanks for playing #{@real_name}", "I had lots of fun.".upcase.colorize(:red))
+    waits(4)
+    waits(3)
+    puts `clear`
+
+    end_screen_options
+    # The End!
 end
 
 
@@ -434,7 +517,7 @@ def end_screen_options
         if @return_value == "no"
             @play = false # If user says no the program stops
             puts `clear`
-            types "Goodbye friend."
+            types "Goodbye " + "#{@real_name}".colorize(:red)
             waits(2)
             puts `clear`
         else

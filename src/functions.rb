@@ -177,25 +177,13 @@ def glitch_to_1(sentence_1, sentence_2)
     sleep(0.4)
     puts `clear`
     print sentence_2
-    sleep(0.1)
+    sleep(0.2)
     puts `clear`
     print sentence_1
-    sleep(0.5)
+    sleep(0.05)
     puts `clear`
     print sentence_2
-    sleep(0.09)
-    puts `clear`
-    print sentence_1
-    sleep(0.4)
-    puts `clear`
-    print sentence_2
-    sleep(1.5)
-    puts `clear`
-    print sentence_1
-    sleep(0.1)
-    puts `clear`
-    print sentence_2
-    sleep(0.06)
+    sleep(0.3)
     puts `clear`
     print sentence_1
 end
