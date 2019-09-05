@@ -1,20 +1,43 @@
-![I Know Your Name Logo Gif](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo_Gif.gif)
-
+﻿![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo.png)
 
 I KNOW YOUR NAME - RUBY APPLICATION
-============
-![Twitter Follow](https://img.shields.io/twitter/follow/alexleybourne?style=social) 
-![GitHub followers](https://img.shields.io/github/followers/alexleybourne?label=Follow&style=social)
 
-source code: [https://github.com/alexleybourne/I_Know_Your_Name](https://github.com/alexleybourne/I_Know_Your_Name)
+source code: 
 
 ## Description
 **‘I Know Your Name’** Is a text based horror game inspired by a new genre of horror has become popular with the concept of a game becoming self aware.  The game has been coded with Ruby using multiple Gems, custom methods, modules and following the DRY (Don't Repeat Yourself) principle.
 
 This Terminal game take the classic text adventure game formula and flips it on its head. With the computer becoming more and more evil as you progress. Your choices change the outcome of the game based on how you interact with the computer.
 
+## Installation Instructions
+
+1. Follow these instructions to [download and install](https://www.ruby-lang.org/en/documentation/installation/) Ruby on your computer. 
+2. Download and unzip the files on your local computer. 
+3. On the terminal command line, navigate to the src folder. Install the bundler gem (if you haven't already) 
+```
+> install bundler
+```
+4. Ask bundle to install the gems that we use for the program. 
+```
+> bundle install 
+```
+5. In the terminal command line, navigate to the src folder by inputting the command 
+  ```
+  > cd src 
+  ```
+6. Input the below command in the terminal command line.  
+  ```
+  > ruby main.rb
+  ```
+7. If you get an error message try updating your gems
+  ```
+  > gem update --system
+  ```
+8. Run program using step 6 again. 
+
+
 ## Motivation
-I have recently been watching many horror movies and that naturally gave me the idea that I wanted to create a horror based text game. I wanted to also stand out and make something unique to leave a lasting impression.
+I have recently been watching many horror movies and that naturally gave me the idea that I wanted ot create a horror based text game. I wanted to also stand out and make something unique to leave a lasting impression.
 
 I also played with other ideas in my brainstorming process:
 - Recreating **Snake** the classic hit arcade game. However this would be a very large project to undertake in such a short time and would lack originality.
@@ -61,51 +84,23 @@ I Know Your Name makes use of numerous gems to enhance the user experience and a
 * [Colorize](https://github.com/fazibear/colorize) Enables the use of coloured outputs in the Terminal.
 
 * [TTY-Cursor](https://github.com/piotrmurach/tty-cursor) To enable the computer to easily navigate the console and delete lines.
-
 * [TTY-ProgressBar](https://github.com/piotrmurach/tty-progressbar) Which enables the ability to easily display and create progress bars. (The file transfers)
-
-* [IO-Console](https://github.com/ruby/io-console) This enables the start screen to accept any key as an input.
 
 ## Build Status
 The current product is in the process of being finished.
 
-## Instructions for use
-
-1. Follow these instructions to [download and install](https://www.ruby-lang.org/en/documentation/installation/) Ruby on your computer. 
-2. Download and unzip the files on your local computer. 
-3. On the terminal command line, navigate to the src folder. Install the bundler gem (if you haven't already) 
-```
-> install bundler
-```
-4. Ask bundle to install the gems that we use for the program. 
-```
-> bundle install 
-```
-5. In the terminal command line, navigate to the src folder by inputting the command 
-  ```
-  > cd src 
-  ```
-6. Input the below command in the terminal command line.  
-  ```
-  > ruby main.rb
-  ```
-7. If you get an error message try updating your gems
-  ```
-  > gem update --system
-  ```
-8. Run program using step 6 again. 
 
 ## Design and Planning progress
 
-*I Know Your Name* was created in three days by Alex Leybourne as part of Ruby Assessment at [Coder Academy](https://coderacademy.edu.au/)
+*I Know Your Name* was created in three days by Alex Leybourne as part of Ruby Assessment at [Coder Acadmey](https://coderacademy.edu.au/)
 
-In the early stages of planning I brainstormed potential ideas and functionality I could incorporate within them. I then settled on the text based horror idea and began forminga basic structure of what to do, features, user stories etc. in [Trello](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app).
+In the early stages of planning I brainstormed potential ideas and functionality I could incorporate within them. I then settled on the text based horror idea and began forminga basic strucutre of what to do, features, user stories etc. in [Trello](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app).
 
 I then got to work on the flowchart of the app to layout the story line and the paths the user can take. How the computer will interact with them and the way it will all work. 
 
 Flowchart of story pathways and functions:
 
-![Flow Chart of Game](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Flowchart_jpeg.jpeg)
+![enter image description here](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Flowchart.pdf)
 
 
 ## Record of Planning Progress
@@ -113,7 +108,7 @@ Flowchart of story pathways and functions:
 
 ## Project Timeline 
 
-The initial planning and pre visualisation of the program was mostly done the first day after getting the project. 
+The initial planning and pre visualization of the program was mostly done the first day after getting the project. 
 ## Testing
 
 
@@ -128,11 +123,11 @@ Copyright issues were not a concern as the idea is completely original and does 
 
 ## License
 
-**Copyright © 2019 Alex Leybourne** for [Coder Academy](https://coderacademy.edu.au).
+**Copyright (c) 2019 Alex Leybourne** for [Coder Academy](https://coderacademy.edu.au).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distributeand to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
