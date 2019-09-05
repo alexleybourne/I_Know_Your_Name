@@ -7,7 +7,7 @@
 
 - 2/09/19 `1:00` - **Gem research and Brainstorming**
 - 2/09/19 `2:00` - **Recieved Project**
-- 2/09/19 `3:00` - **Outlined tasks in [Trello](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app)**
+- 2/09/19 `3:00` - **Outlined tasks in [Trello Board](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app)**
 - 2/09/19 `4:30` - **Planned App Script / Endings**
 
 > Tuesday 3rd of September 2019
@@ -49,4 +49,5 @@
 - 4/09/19 `4:00` - **Finished all story Pathways**
 - 4/09/19 `4:20` - **User Testing**
 - 4/09/19 `4:40` - **Teacher feedback on code and documentation so far**
+- 4/09/19 `6:00` - **Added to / updated [Trello Board](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app)**
 - 4/09/19 `9:30` - **Updated Development log**
