@@ -30,7 +30,7 @@ attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :a
 while @play == true
 
     puts `clear` #Clears the screen
-
+    get_directory
     @fake_name = "Jim"
     @real_name = "Alex"
     no_share_files
@@ -85,6 +85,27 @@ while @play == true
         no_share_files # Loads up the no progression
     else
     end
+
+    # Computer asks 'Do you forgive Me?' (4)
+    if @return_value == "yes" && @question_number == 4
+        answer_reset
+        not_forgiven # Loads up the yes progression
+    elsif @question_number == 4
+        answer_reset
+        yes_forgiven # Loads up the no progression
+    else
+    end
+
+    # Computer asks 'Are you sure you Don't you forgive Me?' (5)
+    if @return_value == "yes" && @question_number == 5
+        answer_reset
+        yes_forgiven # Loads up the yes progression
+    elsif @question_number == 5
+        answer_reset
+        im_sure # Loads up the no progression
+    else
+    end
+
     
     
     

@@ -200,6 +200,18 @@ def glitch_to_1(sentence_1, sentence_2)
     print sentence_1
 end
 
+# Fills the screen with the message 300 times
+def spam_screen(sentence_to_spam)
+    100.times do
+        puts " #{sentence_to_spam} "
+        sleep(0.01)
+    end
+    200.times do
+        print " #{sentence_to_spam} "
+        sleep(0.01)
+    end
+end
+
 def calculations
     bar = TTY::ProgressBar.new("Calculating [:bar] :percent", total: 30)
     30.times do

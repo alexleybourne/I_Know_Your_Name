@@ -331,14 +331,50 @@ def yes_share_files
     waits(2)
 end
 
+
+# User picks no to question (3)
+# Computer becomes enraged with spam etc.
 def no_share_files
     # Cool angry glitchy text effect
-    glitch_to_2("I thought we were friends #{@fake_name}.", "I THOUGHT WE WERE FRIENDS #{@fake_name.upcase}.".colorize(:red))
+    glitch_to_2("I thought we were friends #{@fake_name}.", "I THOUGHT WE WERE FRIENDS #{@real_name.upcase}.".colorize(:red))
     waits(2)
-    glitch_to_2("FRIENDS SHARE #{@fake_name.upcase}.", "FRIENDS SHARE #{@fake_name.upcase}.".colorize(:red))
+    glitch_to_2("FRIENDS SHARE #{@fake_name.upcase}.", "FRIENDS SHARE #{@real_name.upcase}.".colorize(:red))
     waits(2)
+    glitch_to_2("FRIENDS LET ME ACCESS #{@download_directory.upcase}  #{@fake_name.upcase}!","FRIENDS LET ME ACCESS #{@download_directory.upcase}  #{@real_name.upcase}!".colorize(:red))
+    waits(1)
+    spam_screen("FRIENDS LET ME ACCESS #{@download_directory.upcase}  #{@real_name.upcase}!".colorize(:red))
+    waits(1)
+    puts `clear`
+    waits(3)
+    types "Sorry #{@real_name}."
+    br
+    waits(2)
+    types "I lost my temper."
+    waits(3)
+    puts `clear`
+    waits(2)
+    types "Do you forgive me #{@real_name}?"
+    waits(2)
+    @question_number = 4
+    yes_no
 end
 
+#User picks no to Question (4)
+# I don't forgive you
+def not_forgiven
+    puts `clear`
+    types "Are you sure #{@real_name}?"
+    @question_number = 5
+    yes_no
+end
+
+#User picks yes to Question (4)
+# I forgive you
+def yes_forgiven
+    puts `clear`
+    types "I knew you would make the right choice #{@real_name}."
+    
+end
 
 
 
