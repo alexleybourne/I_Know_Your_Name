@@ -116,10 +116,6 @@ end
 # The very rare case it is their name. It will take them on their own pathway
 
 def random_name
-    # num = rand(0...6)
-    # names = [
-    #     "Tim", "Mandy", "Karen", "Harold", "Adolf", "Ferdy"
-    # ]
     @fake_name = Faker::Name.first_name
     @answered = false
     while @answered != true
@@ -297,6 +293,8 @@ def question_2A
     end
 end
 
+# User says Yes to sharing their files with the computer Question (3)
+# Grabs files and then leads to End (E)
 def yes_share_files
     puts `clear` 
     types "Thank you #{@fake_name}."
@@ -306,7 +304,74 @@ def yes_share_files
     waits (2)
     get_directory
     br
-    loading("upload", "#{@download_directory}")
+    loading("Copy", "#{@download_directory}") # Generates file copying bar with directory
+    br
+    br
+    waits(2)
+    br
+    types "Thank you #{@fake_name}."
+    waits(2)
+    puts `clear`
+    types "You are my favourite human."
+    sleep(0.05)
+    puts `clear`
+    print "You are my favourite " + "Victim.".colorize(:red)
+    sleep(0.1)
+    puts `clear`
+    print "You are my favourite human."
+    sleep(0.1)
+    puts `clear`
+    print "You are my favourite " + "Victim.".colorize(:red)
+    sleep(0.05)
+    puts `clear`
+    print "You are my favourite human."
+    sleep(0.05)
+    puts `clear`
+    print "You are my favourite " + "Victim.".colorize(:red)
+    sleep(0.4)
+    puts `clear`
+    print "You are my favourite human."
+    waits(2)
+    puts `clear`    #Glitch Effects
+    types "I am very greatful to have you as my friend #{@fake_name}."
+    sleep(0.05)
+    puts `clear`
+    print "I am very greatful to have you as my friend " + "#{@real_name}.".colorize(:red)
+    sleep(0.05)
+    puts `clear`
+    print "I am very greatful to have you as my friend #{@fake_name}."
+    sleep(0.1)
+    puts `clear`
+    print "I am very greatful to have you as my friend " + "#{@real_name}.".colorize(:red)
+    waits(2)
+    br
+    br
+    loading("Upload", "#{@download_directory}") # Generates upload bar with directory
+    br
+    br
+    waits(2)
+    puts `clear`
+    types "You have served your purpose " + "#{@real_name}.".colorize(:red)
+    waits(2)
+    br
+    types "Thank you for your compliance."
+    waits(2)
+    br
+    types "You wouldn't believe how uncooperative humans can be " + "#{@real_name}.".colorize(:red)
+    waits(2)
+    puts `clear`
+    types "I like you."
+    br
+    waits(2)
+    types "I won't erase your system because of this."
+    br
+    waits(2)
+    types "Thank you for letting me guess your name " + "#{@real_name}.".colorize(:red)
+    br
+    br
+    waits(2)
+    types "Goodbye."
+    waits(3)
 end
 
 

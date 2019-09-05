@@ -5,6 +5,7 @@ require 'tty-progressbar'
 require 'io/console'
 require 'faker'
 
+
 cursor = TTY::Cursor
 
 def br   # Easy break / line space shortcut
@@ -17,7 +18,7 @@ def types(word)
     word.each_char do |char|
         print char
         sleep(0.05)
-    end  
+    end 
 end
 
 # Faster Version
