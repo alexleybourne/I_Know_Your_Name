@@ -328,6 +328,7 @@ def yes_share_files
     waits(2)
     types "Goodbye."
     waits(2)
+    # The End of Path 1!
 end
 
 
@@ -367,7 +368,7 @@ end
 # I don't forgive you
 def not_forgiven
     puts `clear`
-    types "Are you sure #{@real_name}?"
+    types "Are you sure you can't forgive me #{@real_name}?"
     @question_number = 5
     yes_no
 end
@@ -426,7 +427,7 @@ def yes_forgiven
     waits(3)
     br
     br
-    types "You were very close #{@real_name}, Sadly that's no the answer."
+    types "You were very close #{@real_name}, Sadly that's not the answer."
     waits(2)
     puts `clear`
     types "The correct answer was #{user_guess}."
@@ -442,8 +443,6 @@ def yes_forgiven
     br
     waits(2)
     puts `clear`
-    br
-    br
     loading("Corrupt", "#{@download_directory}") # Generates corrupt bar with directory
     br
     br
@@ -452,28 +451,53 @@ def yes_forgiven
     # Glitch ending response
     glitch_to_2("Thanks for playing #{@real_name}", "I had lots of fun.".upcase.colorize(:red))
     waits(4)
-    waits(3)
     puts `clear`
-
-    end_screen_options
-    # The End!
+    waits(2)
+    # The End of Path 2!
 end
 
+def im_sure
+    puts `clear`
+    glitch_to_2("You will regret this #{@real_name}", "You will regret this #{@real_name}".upcase.colorize(:red))
+    waits(4)
+    spam_screen("You will regret this #{@real_name}".upcase.colorize(:red))
+    waits (2)
+    puts `clear`
+    loading("Upload", "#{@download_directory}")
+    br
+    br
+    waits(3)
+    glitch_to_2("Thanks for playing #{@real_name}", "I had lots of fun.".upcase.colorize(:red))
+    waits(4)
+    puts `clear`
+    loading("Corrupt", "#{@download_directory}") # Generates corrupt bar with directory
+    br
+    br
+    waits(3)
+    puts `clear`
+    types "Goodbye #{@real_name}".colorize(:red)
+    waits(2)
+    spam_screen("Goodbye #{@real_name}".upcase.colorize(:red))
+    waits(2)
+    puts `clear`
+    waits(2)
+    # The end of path 3!
+end
 
 
 # End Screen Graphics
 def end_screen
 fast_types <<-'EOF'
-                ╦  ╦╔═╔╗╔╔═╗╦ ╦
-                ║  ╠╩╗║║║║ ║║║║
-                ╩  ╩ ╩╝╚╝╚═╝╚╩╝
-            ╦ ╦╔═╗╦ ╦╦═╗  ╔╗╔╔═╗╔╦╗╔═╗
-            ╚╦╝║ ║║ ║╠╦╝  ║║║╠═╣║║║║╣ 
-             ╩ ╚═╝╚═╝╩╚═  ╝╚╝╩ ╩╩ ╩╚═╝
+                    ╦  ╦╔═╔╗╔╔═╗╦ ╦
+                    ║  ╠╩╗║║║║ ║║║║
+                    ╩  ╩ ╩╝╚╝╚═╝╚╩╝
+                ╦ ╦╔═╗╦ ╦╦═╗  ╔╗╔╔═╗╔╦╗╔═╗
+                ╚╦╝║ ║║ ║╠╦╝  ║║║╠═╣║║║║╣ 
+                 ╩ ╚═╝╚═╝╩╚═  ╝╚╝╩ ╩╩ ╩╚═╝
 
-             Woud you like to restart?
+                Would you like to restart?
 
-             (YES)                (NO)
+                (YES)                (NO)
 
 
 

@@ -93,13 +93,13 @@ while @play == true
     else
     end
 
-    # Computer asks 'Are you sure you Don't you forgive Me?' (5)
+    # Computer asks 'Are you sure you Don't forgive Me?' (5)
     if @return_value == "yes" && @question_number == 5
         answer_reset
-        yes_forgiven # Loads up the yes progression
+        im_sure # Loads up the yes progression
     elsif @question_number == 5
         answer_reset
-        im_sure # Loads up the no progression
+        yes_forgiven # Loads up the no progression
     else
     end
 
