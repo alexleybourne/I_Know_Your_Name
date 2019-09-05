@@ -1,7 +1,10 @@
-﻿![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo_Gif.gif)
+![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo_Gif.gif)
 
 
 ## Development Log:
+###### By Alex Leybourne
+----
+### with status updates:
 
 > Monday 2nd of September 2019
 
@@ -32,6 +35,13 @@
 - 4/09/19 `2:00` - **Added Random name generator and End screen restart loop**
 -  4/09/19 `7:30` - **Yes / No Questions are now in a function to improve DRY principle**
 -   4/09/19 `7:50` - **Updating Flowchart  and Development log (More Detailed)**
+-----
+### Halfway Through
+-----
+
+So far I am about halfway through the development of my ruby app. I have layed down most of the foundation to get it all going and have begun pathways for the user to follow. A significant part of this process was planning all the computer's lines / it's script for each prompt it will give the user depending on the decisions the user makes. Going through and testing the code and refactoring it also takes a lot of time as it acts as a debugging process almost as well. Overall I am very happy with the development of the project so far and can't wait to see the final product.
+
+------
 
 > Thursday 5th of September 2019
 
@@ -51,3 +61,13 @@
 - 4/09/19 `4:40` - **Teacher feedback on code and documentation so far**
 - 4/09/19 `6:00` - **Added to / updated [Trello Board](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app)**
 - 4/09/19 `9:30` - **Updated Development log**
+- 4/09/19 `10:30` - **Updated README, Added Help and Added Software Development Plan**
+
+-----
+### After Testing
+-----
+Testing was unexpectedly very fun for the most part. Test Driven Development helps you find most flaws as you code however there are still some nasty little bugs that crawl their way through. I found most myself just by playing over and over again and thinking of evey potential user input and decision. The fun part was asking fellow classmates & family at home to have a g o and seeing their reactions to the comouters unique responses and cunning behaviour. After a few tweaks such as accidental loops or not recognising a certain input aka lower and upper case variants. All is good! I am very proud of the final product I have created.
+
+---
+### The End.
+
