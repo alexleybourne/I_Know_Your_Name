@@ -1,8 +1,7 @@
-![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Logo-Gif.gif)
+﻿![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Logo-Gif.gif)
 
 ## I KNOW YOUR NAME
 ![GitHub followers](https://img.shields.io/github/followers/alexleybourne?style=social)
-
 ![Twitter Follow](https://img.shields.io/twitter/follow/AlexLeybourne?style=social)
 
 Source code: [https://github.com/alexleybourne/I_Know_Your_Name](https://github.com/alexleybourne/I_Know_Your_Name)

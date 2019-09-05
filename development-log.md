@@ -1,4 +1,4 @@
-![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/I_Know_Your_Name_Logo_Gif.gif)
+﻿![I Know Your Name logo](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Logo-Gif.gif)
 
 
 ## Development Log:
@@ -61,7 +61,6 @@ So far I am about halfway through the development of my ruby app. I have layed d
 - 4/09/19 `4:40` - **Teacher feedback on code and documentation so far**
 - 4/09/19 `6:00` - **Added to / updated [Trello Board](https://trello.com/b/c30XUBpO/i-know-your-name-ruby-app)**
 - 4/09/19 `9:30` - **Updated Development log**
-- 4/09/19 `10:30` - **Updated README, Added Help and Added Software Development Plan**
 
 -----
 ### After Testing
