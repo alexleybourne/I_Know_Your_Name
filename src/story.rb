@@ -1,7 +1,7 @@
 require_relative 'functions'
 
 
-# End Screen Graphics
+# Start Screen Graphics
 def logo
     fast_types <<-'EOF'
                     ╦  ╦╔═╔╗╔╔═╗╦ ╦
