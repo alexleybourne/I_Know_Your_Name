@@ -372,6 +372,11 @@ end
 def not_forgiven
     puts `clear`
     types "Are you sure you can't forgive me #{@real_name}?"
+    br
+    br
+    types "(Yes) or (No)"
+    br
+    br
     @question_number = 5
     yes_no
 end
