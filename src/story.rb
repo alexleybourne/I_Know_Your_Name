@@ -1,5 +1,8 @@
 require_relative 'functions'
 
+def testing # For testing the story file loads correctly
+     testing = "Hello there"
+end
 
 # Start Screen Graphics
 def logo

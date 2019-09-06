@@ -4,6 +4,9 @@ require_relative 'story'
 class Main
 attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :answered, :download_directory
 
+# Values used between all files to allow cross commnuication and saved values to be
+# Accessed by other functions etc.
+
 @play = true
 @fake_name = "empty"
 @real_name = "empty"
@@ -11,6 +14,7 @@ attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :a
 @return_value = "empty"
 @answered = false
 @download_directory = ""
+
 
 =begin
      ╦  ╦╔═╔╗╔╔═╗╦ ╦
@@ -27,6 +31,8 @@ attr_accessor :play, :fake_name, :real_name, :question_number, :return_value, :a
 =end
 #-------------------------------------------------------------------------------------------
 
+# Check the user is playing.
+# Mainly used to restart game if user selects play again at end screen
 while @play == true
 
     puts `clear` #Clears the screen
@@ -37,7 +43,7 @@ while @play == true
     STDIN.getch  #Waits for user input (Any Key)
     puts `clear` # Clears screen after
 
-    introduction
+    introduction # Loads introduction
 
     first_questions #Loads The first set of three questions
 
@@ -102,15 +108,9 @@ while @play == true
         yes_forgiven # Loads up the no progression
     else
     end
-
-    
-    
     
     waits(3)
 
-
-
-    
     end_screen_options # Dipslays end screen text with options Yes and No to restart
 
 

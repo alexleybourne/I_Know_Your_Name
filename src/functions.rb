@@ -5,7 +5,6 @@ require 'tty-progressbar'
 require 'io/console'
 require 'faker'
 
-
 cursor = TTY::Cursor
 
 def br   # Easy break / line space shortcut
@@ -30,6 +29,8 @@ def fast_types(word)
     br  
 end
 
+# Resets the answer value
+# Used after each question being successfully answered
 def answer_reset
     @answered = false
     @return_value = "empty"
@@ -112,7 +113,12 @@ def waits(time)
     end
 end
 
-def get_directory
+
+# Finds the current working directory
+# Then splits it by "/" 's and deletes other words
+# Puts it back together and returns something smaller
+# aka /Users/AlexLeybourne/
+def get_directory 
     directory = Dir.pwd.to_s
     directory = directory.split('/')
     length = directory.length
@@ -200,6 +206,7 @@ def spam_screen(sentence_to_spam)
     end
 end
 
+# Simple loading bar for calculations at start
 def calculations
     bar = TTY::ProgressBar.new("Calculating [:bar] :percent", total: 30)
     30.times do
