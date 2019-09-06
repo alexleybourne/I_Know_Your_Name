@@ -63,6 +63,12 @@ So far I am about halfway through the development of my ruby app. I have layed d
 - 4/09/19 `9:30` - **Updated Development log**
 
 -----
+> Friday 6th of September 2019
+
+- 5/09/19 `9:00` - **Uploaded fixed Flowcharts**
+- 5/09/19 `10:00` - **Bug fix on "Do you forgive me" question**
+
+-----
 ### After Testing
 -----
 Testing was unexpectedly very fun for the most part. Test Driven Development helps you find most flaws as you code however there are still some nasty little bugs that crawl their way through. I found most myself just by playing over and over again and thinking of evey potential user input and decision. The fun part was asking fellow classmates & family at home to have a g o and seeing their reactions to the comouters unique responses and cunning behaviour. After a few tweaks such as accidental loops or not recognising a certain input aka lower and upper case variants. All is good! I am very proud of the final product I have created.
