@@ -98,19 +98,11 @@ end
 
 # Multiple verisons of wait time to save me typing 'sleep(3.0)' etc. each time
 # Variants make it quick to pick how long I want to pause / delay 
+
 def waits(time)
-    case time
-    when 4
-        sleep(3.0)
-    when 3
-        sleep(1.5)
-    when 2
-        sleep(1.0)
-    when 1
-        sleep(0.4)
-    else
-        sleep(0.1)
-    end
+    num = time
+    sleep_time = [(0.1), (0.4), (1.0), (1.5), (3.0)]
+    sleep(sleep_time[num])
 end
 
 
