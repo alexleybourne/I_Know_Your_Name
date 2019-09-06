@@ -49,4 +49,13 @@ I Know Your Name Development Flowchart:
 ![I Know Your Name Flowchart](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Flowchart-jpg.jpg)
 
 ----
+### Code Refactoring / DRY Principle  Example:
+- [Example 1](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Code-Dry-Example1.jpg)
 
+- [Example 2](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Code-Dry-Example2.jpg)
+
+![Example 1](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Code-Dry-Example1.jpg)
+
+![Example 2](https://github.com/alexleybourne/I_Know_Your_Name/blob/master/Docs/Alex-Leybourne-IKYN-Code-Dry-Example2.jpg)
+
+---

@@ -67,6 +67,7 @@ So far I am about halfway through the development of my ruby app. I have layed d
 
 - 5/09/19 `9:00` - **Uploaded fixed Flowcharts**
 - 5/09/19 `10:00` - **Bug fix on "Do you forgive me" question**
+- 5/09/19 `3:00` - **Refactoring code (DRY) and final checks**
 
 -----
 ### After Testing
