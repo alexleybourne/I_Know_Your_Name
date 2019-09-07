@@ -125,38 +125,18 @@ end
 # Glitch Effect between two texts
 # Does glitch naimation but ends on new text
 def glitch_to_2(sentence_1, sentence_2)
-    puts `clear` 
+    puts `clear`
     types sentence_1
-    sleep(0.05)
-    puts `clear`
-    print sentence_2
-    sleep(0.01)
-    puts `clear`
-    print sentence_1
-    sleep(0.4)
-    puts `clear`
-    print sentence_2
-    sleep(0.03)
-    puts `clear`
-    print sentence_1
-    sleep(0.5)
-    puts `clear`
-    print sentence_2
-    sleep(0.06)
-    puts `clear`
-    print sentence_1
-    sleep(0.4)
-    puts `clear`
-    print sentence_2
-    sleep(0.03)
-    puts `clear`
-    print sentence_1
-    sleep(0.1)
-    puts `clear`
-    print sentence_2
-    sleep(0.06)
-    puts `clear`
-    print sentence_1
+    7.times do
+        num1 =(rand(0.04...0.1))
+        num2 =(rand(0.04...0.2))
+        sleep(num1)
+        puts `clear`
+        print sentence_2
+        sleep(num2)
+        puts `clear`
+        print sentence_1
+    end
     sleep(0.2)
     puts `clear`
     print sentence_2
@@ -164,26 +144,18 @@ end
 
 # Does glitch animation but back to where it started
 def glitch_to_1(sentence_1, sentence_2)
-    puts `clear` 
+    puts `clear`
     types sentence_1
-    sleep(0.05)
-    puts `clear`
-    print sentence_2
-    sleep(0.05)
-    puts `clear`
-    print sentence_1
-    sleep(0.4)
-    puts `clear`
-    print sentence_2
-    sleep(0.2)
-    puts `clear`
-    print sentence_1
-    sleep(0.05)
-    puts `clear`
-    print sentence_2
-    sleep(0.3)
-    puts `clear`
-    print sentence_1
+    8.times do
+        num1 =(rand(0.05...0.1))
+        num2 =(rand(0.05...0.3))
+        sleep(num1)
+        puts `clear`
+        print sentence_2
+        sleep(num2)
+        puts `clear`
+        print sentence_1
+    end
 end
 
 # Fills the screen with the message 300 times
